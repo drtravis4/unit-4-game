@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Crystal Collector</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Crystal Collector</h1>
+
+      <!-- Page 0: Directions -->
+      <div class="page">
+        <h2>Directions:</h2>
+
+        <p>There are 4 crystals, each worth a certain amount of points.</p>
+        <p>Find out the value of each crystal to hit the target sum!</p>
+        <p>Note, there is always a solution.</p>
+
+        <div class="page_next">Start</div>
+      </div>
+
+      <!-- Page 1: Game Screen -->
+      <div class="page">
+        <div id="userStats">
+          <p>
+            Wins: <strong><span id="numWins"></span></strong>
+          </p>
+          <p>
+            Losses: <strong><span id="numLosses"></span></strong>
+          </p>
+        </div>
+
+        <p>Make a sum of <span id="targetSum"></span>!</p>
+        <p>
+          Your sum is <strong><span id="currentSum"></span></strong>.
+        </p>
+
+        <div class="clearfix">
+          <img
+            class="#button"
+            src="assets/images/gem4.jpg"
+            alt="orange crystal"
+          />
+          <img
+            class="#button-2"
+            src="assets/images/gem2.jpg"
+            alt="blue crystal"
+          />
+          <img
+            class="#button-3"
+            src="assets/images/gem3.jpg"
+            alt="green crystal"
+          />
+          <img
+            class="#button-4"
+            src="assets/images/gem4.jpg"
+            alt="purple crystal"
+          />
+        </div>
+
+        <div class="page_prev">Directions</div>
+      </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightBox_background"></div>
+
+    <div id="lightBox" class="container">
+      <p id="outputMessage"></p>
+    </div>
+
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+  </body>
+</html>
